@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translation App</title>
+   <link rel="stylesheet" href="langauge.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="opt">
+            <label for="lang"> Select a Language</label>
+            <!-- <select name="lang" id="language" onchange="getLanguage()"></select> -->
+            <select name="lang" id="Language" onchange="selectLanguage()">
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+                <option value="zh">Chinese</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="hi">Hindi</option>
+                <option value="id">Indonesian</option>
+                <option value="ga">Irish</option>
+                <option value="it">Italian</option>
+                <option value="ja">Japanese</option>
+                <option value="ko">Korean</option>
+                <option value="pl">Polish</option>
+                <option value="pt">Portuguese</option>
+                <option value="ru">Russian</option>
+                <option value="es">Spanish</option>
+                <option value="tr">Turkish</option>
+                <option value="vi">Vietnamese</option>
+            </select>
+        </div>
+        <!-- <div id="box">
+            <input type="text" id="input">
+            <input type="text" id="output">
+        </div> -->
+        <div id="smallbox">
+            <textarea class="Box" id="input" rows="10" cols="50"> </textarea>
+            <textarea class="Box" id="output" rows="10" cols="50"> </textarea>
+        </div>
+
+        <div id="button">
+            <button onclick="speakTranslate()"> Click to Speak</button>
+            <button onclick="getTranslate()"> Translate </button>
+            <button onclick="getSpeakOut()">Speak Out</button>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
+<script src="langauage.js"></script>
